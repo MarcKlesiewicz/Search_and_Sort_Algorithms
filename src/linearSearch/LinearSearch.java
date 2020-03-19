@@ -21,7 +21,7 @@ public class LinearSearch {
     }
 
 
-    private int[] theArray = new int[50]; // Creates an array with 50 indexes
+    private int[] theArray = new int[50];
 
     //Antallet af indexes i theArray
     private int arraySize = 20;
@@ -37,16 +37,17 @@ public class LinearSearch {
     }
 
 
-    // Printer Array i console : indexes til venstre og værdi til højre
-
+    // Printer Array i console
     public void printArray(){
 
         System.out.println("----------");
 
         for(int i = 0; i < arraySize; i++){
 
+            //index nummer
             System.out.print("| " + i + " | ");
 
+            //value
             System.out.println(theArray[i] + " |");
 
             System.out.println("----------");
@@ -55,7 +56,7 @@ public class LinearSearch {
     }
 
 
-    /* Linear Search metode : søger kronologisk igennem array et tal af gangen
+    /* Linear Search metode : søger kronologisk igennem array, et tal af gangen
     og retunere indexes som indeholder tallet */
 
     public String linearSearchForValue(int value){
@@ -71,7 +72,7 @@ public class LinearSearch {
             if(theArray[i] == value) {
                 valueInArray = true;
 
-                System.out.print(i + " ");
+                System.out.print(i + ", ");
 
                 indexsWithValue+= i + " ";
             }
@@ -82,10 +83,7 @@ public class LinearSearch {
             System.out.print(indexsWithValue);
         }
 
-        System.out.println();
-
         return indexsWithValue;
-
     }
 }
 
