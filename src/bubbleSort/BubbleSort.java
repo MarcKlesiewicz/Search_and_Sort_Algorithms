@@ -56,7 +56,7 @@ public class BubbleSort {
     }
 
 
-    // Bubble sort metode
+    // Bubble sort metode : sortere array fra lille til stor value
 
     public void bubbleSort() {
 
